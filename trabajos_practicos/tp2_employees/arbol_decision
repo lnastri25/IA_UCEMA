@@ -1,9 +1,33 @@
 digraph Tree {
 node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
 edge [fontname="helvetica"] ;
-0 [label=<Attrition &le; 0.5<br/>gini = 0.284<br/>samples = 1029<br/>value = [853, 176]<br/>class = No Renuncia>, fillcolor="#ea9b62"] ;
-1 [label=<gini = 0.0<br/>samples = 853<br/>value = [853, 0]<br/>class = No Renuncia>, fillcolor="#e58139"] ;
+0 [label=<TotalWorkingYears &le; -1.265<br/>gini = 0.271<br/>samples = 1176<br/>value = [986, 190]<br/>class = No Renuncia>, fillcolor="#ea995f"] ;
+1 [label=<Age &le; -0.381<br/>gini = 0.49<br/>samples = 72<br/>value = [31, 41]<br/>class = Renuncia>, fillcolor="#cfe7f9"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label=<gini = 0.0<br/>samples = 176<br/>value = [0, 176]<br/>class = Renuncia>, fillcolor="#399de5"] ;
-0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+2 [label=<JobRole_Research Scientist &le; 0.802<br/>gini = 0.458<br/>samples = 62<br/>value = [22, 40]<br/>class = Renuncia>, fillcolor="#a6d3f3"] ;
+1 -> 2 ;
+3 [label=<gini = 0.331<br/>samples = 43<br/>value = [9, 34]<br/>class = Renuncia>, fillcolor="#6db7ec"] ;
+2 -> 3 ;
+4 [label=<gini = 0.432<br/>samples = 19<br/>value = [13, 6]<br/>class = No Renuncia>, fillcolor="#f1bb94"] ;
+2 -> 4 ;
+5 [label=<MonthlyRate &le; 1.148<br/>gini = 0.18<br/>samples = 10<br/>value = [9, 1]<br/>class = No Renuncia>, fillcolor="#e88f4f"] ;
+1 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 8<br/>value = [8, 0]<br/>class = No Renuncia>, fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label=<gini = 0.5<br/>samples = 2<br/>value = [1, 1]<br/>class = No Renuncia>, fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label=<OverTime_Yes &le; 0.465<br/>gini = 0.233<br/>samples = 1104<br/>value = [955, 149]<br/>class = No Renuncia>, fillcolor="#e99558"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<WorkLifeBalance &le; -1.752<br/>gini = 0.164<br/>samples = 787<br/>value = [716, 71]<br/>class = No Renuncia>, fillcolor="#e88d4d"] ;
+8 -> 9 ;
+10 [label=<gini = 0.38<br/>samples = 47<br/>value = [35, 12]<br/>class = No Renuncia>, fillcolor="#eeac7d"] ;
+9 -> 10 ;
+11 [label=<gini = 0.147<br/>samples = 740<br/>value = [681, 59]<br/>class = No Renuncia>, fillcolor="#e78c4a"] ;
+9 -> 11 ;
+12 [label=<MonthlyIncome &le; -0.875<br/>gini = 0.371<br/>samples = 317<br/>value = [239, 78]<br/>class = No Renuncia>, fillcolor="#edaa7a"] ;
+8 -> 12 ;
+13 [label=<gini = 0.48<br/>samples = 40<br/>value = [16, 24]<br/>class = Renuncia>, fillcolor="#bddef6"] ;
+12 -> 13 ;
+14 [label=<gini = 0.314<br/>samples = 277<br/>value = [223, 54]<br/>class = No Renuncia>, fillcolor="#eba069"] ;
+12 -> 14 ;
 }
