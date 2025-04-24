@@ -9,3 +9,4 @@
 .pytest_cache
 *.data
 .vscode
+trabajos_practicos/tp2_employees/catboost_info/
